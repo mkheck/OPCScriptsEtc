@@ -3,9 +3,9 @@
 ### What is this repository for? ###
 
 * The shell scripts in this repository allow you to create containers/instances in the Oracle Cloud Platform:
-** Oracle Storage Cloud Service (SCS) - block storage for DBCS and JCS
-** Oracle Database Cloud Service (DBCS) - provides database back-end for JCS
-** Oracle Java Cloud Service (JCS) - WebLogic cloud instance
+	* Oracle Storage Cloud Service (SCS) - block storage for DBCS and JCS
+	* Oracle Database Cloud Service (DBCS) - provides database back-end for JCS
+	* Oracle Java Cloud Service (JCS) - WebLogic cloud instance
 * Also included (and necessary) are JSON files containing the data/parameters the scripts use to create the containers and instances
 * A shell script to delete unneeded SCS containers is also included
 * Version 1.0
