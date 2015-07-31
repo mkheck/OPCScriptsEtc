@@ -1,0 +1,23 @@
+{ 
+    "serviceName": "<NAME OF DBCS INSTANCE>",
+    "version": "12.1.0.2", 
+    "level": "PAAS", 
+    "edition": "EE", 
+    "subscriptionType": "MONTHLY", 
+    "trial": "false", 
+    "description": "Created DBCS instance", 
+    "backupDestination": "BOTH", 
+    "cloudStorageContainer" : "Storage-<IDENTITY DOMAIN NAME>\/<CONTAINER 1 NAME>", 
+    "cloudStorageUser" : "<USER ID>", 
+    "cloudStoragePwd" : "<IDENTITY DOMAIN PASSWORD>", 
+    "shape": "oc3", 
+    "parameters": [ 
+        { 
+            "type": "db", 
+            "usableStorage": "10", 
+            "adminPassword": "<DATABASE SYS ACCOUNT PASSWORD>", 
+            "failoverDatabase": "no", 
+            "vmPublicKeyText": "<FULL TEXT OF IDENTITY DOMAIN PUBLIC KEY>" 
+        } 
+    ] 
+}

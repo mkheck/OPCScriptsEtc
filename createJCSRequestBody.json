@@ -1,0 +1,54 @@
+{
+    "serviceName" : "<NAME OF JCS INSTANCE>",
+    "level" : "PAAS",
+    "subscriptionType" : "MONTHLY",
+    "description" : "Created JCS instance",
+    "provisionOTD" : true,
+    "cloudStorageContainer" : "Storage-<IDENTITY DOMAIN NAME>\/<CONTAINER 2 NAME>",
+    "cloudStorageUser" : "<USER ID>",
+    "cloudStoragePassword" : "<IDENTITY DOMAIN PASSWORD>",
+ 
+"parameters" : [
+    {
+        "type" : "weblogic",
+        "version" : "12.1.3.0.3",
+        "edition" : "EE",
+        "domainMode" : "PRODUCTION",
+        "managedServerCount" : "1",
+        "adminPort" : "7001",
+        "deploymentChannelPort" : "9001",
+        "securedAdminPort" : "7002",
+        "contentPort" : "8001",
+        "securedContentPort" : "8002",
+        "privilegedListenerPort" : "80",
+        "privilegedSecuredListenerPort" : "443",
+        "domainName" : "<WLS DOMAIN>",
+        "clusterName" : "<WLS CLUSTER>",
+        "adminUserName" : "weblogic",
+        "adminPassword" : "<ADMIN PASSWORD>",
+        "nodeManagerPort" : "6555",
+        "nodeManagerUserName" : "nodeManagerAdmin",
+        "nodeManagerPassword" : "NODE MGR PASSWORD",
+        "dbServiceName" : "<NAME OF EXISTING DBCS INSTANCE>",
+        "dbaName" : "SYS",
+        "dbaPassword" : "<DATABASE SYS ACCOUNT PASSWORD>",
+        "shape" : "oc3",
+        "domainVolumeSize" : "10G",
+        "backupVolumeSize" : "20G",
+        "VMsPublicKey" : "<FULL TEXT OF IDENTITY DOMAIN PUBLIC KEY>"
+    }, 
+    { 
+        "type" : "otd", 
+        "adminUserName" : "otdAdmin", 
+        "adminPassword" : "<ORACLE TRAFFIC DIRECTOR PASSWORD>", 
+        "listenerPortsEnabled" : true, 
+        "listenerType" : "http", 
+        "loadBalancingPolicy" : "least_connection_count", 
+        "privilegedListenerPort" : "80", 
+        "privilegedSecuredListenerPort" : "443", 
+        "adminPort" : "8989", 
+        "shape" : "oc3", 
+        "VMsPublicKey" : "<FULL TEXT OF IDENTITY DOMAIN PUBLIC KEY>" 
+    }
+]
+}
